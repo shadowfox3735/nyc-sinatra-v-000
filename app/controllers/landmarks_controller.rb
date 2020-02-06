@@ -26,4 +26,6 @@ class LandmarksController < ApplicationController
     @landmark.save
     redirect_to "/landmarks/#{@landmark.id}"
   end
+  
+  patch '/landmarks/'
 end
