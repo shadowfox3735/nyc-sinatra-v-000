@@ -3,13 +3,13 @@
   <label for="name">Name</label>
   <input type="text" name="figure[name]" id="figure_name"><br></br>
   
-  <label>Titles</label>
+  <label>Edit Titles</label>
   <% Title.all.each do |title| %>
     <label><%= title.name %></label>
     <input type="checkbox" id="title_<%= title.id %>" name="figure[title_ids][]" value="<%= title.id %>"><br>
     
   <% end %>
-  <label>Create New Title:</label>
+  <label>Add New Title:</label>
   <input type="text" name="title[name]" id="new_title">
   
   <label>Edit Landmarks</label>
