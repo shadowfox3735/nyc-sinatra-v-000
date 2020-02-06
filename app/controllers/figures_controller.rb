@@ -34,7 +34,7 @@ class FiguresController < ApplicationController
     redirect_to "/figures/#{@figure.id}"
   end
   
-  get '/figures/:id' do
+  patch '/figures/:id' do
     
   end
 end
